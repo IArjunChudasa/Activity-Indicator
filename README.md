@@ -6,15 +6,50 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=iarjunchudasa" alt="iarjunchudasa" /></a> </p>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+ActivityIndicator is a singleton class that displays an activity indicator with customizable options such as style, color, and background color. It is useful for showing loading or processing states in your app.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg" alt="objectivec" width="40" height="40"/> </a> <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a> </p>
+Usage
+To use the ActivityIndicator class in your app, simply call the show method to display the activity indicator, and the hide method to hide it.
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=iarjunchudasa&show_icons=true&locale=en&layout=compact" alt="iarjunchudasa" /></p>
+Here's an example of how to use the ActivityIndicator class:
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=iarjunchudasa&show_icons=true&locale=en" alt="iarjunchudasa" /></p>
+// Show the activity indicator
+ActivityIndicator.shared.show()
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=iarjunchudasa&" alt="iarjunchudasa" /></p>
+// Do some processing...
+// ...
+
+// Hide the activity indicator
+ActivityIndicator.shared.hide()
+
+
+You can also customize the activity indicator by passing in optional parameters to the show method. For example:
+
+// Show a small red activity indicator with a clear background
+ActivityIndicator.shared.show(style: .small, color: .red, backgroundColor: .clear)
+
+
+// Show a small red activity indicator with a clear background
+ActivityIndicator.shared.show(style: .small, color: .red, backgroundColor: .clear)
+
+
+Customization
+The show method takes three optional parameters for customizing the activity indicator:
+
+style: The style of the activity indicator. Defaults to .large.
+color: The color of the activity indicator. Defaults to .white.
+backgroundColor: The background color of the view that contains the activity indicator. Defaults to a semi-transparent black color.
+Installation
+Simply copy and paste the ActivityIndicator class into your project, or add it as a file.
+
+License
+ActivityIndicator is available under the MIT license. See the LICENSE file for more information.
+
+Credits
+ActivityIndicator was created by [Your Name] (add your name or your team's name). If you have any questions or suggestions, please feel free to contact us.
+
+Contributing
+If you would like to contribute to ActivityIndicator, please fork the repository and submit a pull request. We welcome contributions from anyone and everyone!
+
+
+
