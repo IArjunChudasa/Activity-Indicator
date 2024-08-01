@@ -1,55 +1,45 @@
-# Activity-Indicator
-<h1 align="center">Hi 👋, I'm Arjun Chudasa</h1>
-<h3 align="center">A passionate iOS developer from India</h3>
+# ActivityIndicator
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=iarjunchudasa&label=Profile%20views&color=0e75b6&style=flat" alt="iarjunchudasa" /> </p>
+`ActivityIndicator` is a Swift utility class for displaying a customizable activity indicator in your iOS application. It simplifies the process of adding and managing a loading indicator, ensuring that only one instance is shown at a time.
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=iarjunchudasa" alt="iarjunchudasa" /></a> </p>
+## Features
 
-ActivityIndicator is a singleton class that displays an activity indicator with customizable options such as style, color, and background color. It is useful for showing loading or processing states in your app.
+- **Singleton Pattern**: Ensures a single shared instance for consistent usage across the app.
+- **Customizable**: Allows customization of the activity indicator's style, color, and background color.
+- **Easy to Use**: Simple methods to show and hide the activity indicator.
 
-Usage
-To use the ActivityIndicator class in your app, simply call the show method to display the activity indicator, and the hide method to hide it.
+## Installation
 
-Here's an example of how to use the ActivityIndicator class:
+### Manual Installation
 
-// Show the activity indicator
+1. Download the `ActivityIndicator.swift` file.
+2. Add the file to your Xcode project.
+
+## Usage
+
+### Import UIKit
+
+Ensure that you import the `UIKit` framework in your project:
+
+```swift
+import UIKit
+
+Using the Shared Instance
+Use the shared instance of ActivityIndicator to display and hide the activity indicator.
+
+Show the Activity Indicator
+You can show the activity indicator with default or custom styles, colors, and background colors
+// Show with default settings
 ActivityIndicator.shared.show()
 
-// Do some processing...
-// ...
+// Show with custom settings
+ActivityIndicator.shared.show(style: .large, color: .red, backgroundColor: UIColor(white: 0, alpha: 0.7))
 
-// Hide the activity indicator
+style: The style of the activity indicator (.large or .medium).
+color: The color of the activity indicator.
+backgroundColor: The background color of the view containing the activity indicator (default is semi-transparent black).
+
+Hide the Activity Indicator
+Call the hide() method to remove the activity indicator from the view.
+
 ActivityIndicator.shared.hide()
-
-
-You can also customize the activity indicator by passing in optional parameters to the show method. For example:
-
-// Show a small red activity indicator with a clear background
-ActivityIndicator.shared.show(style: .small, color: .red, backgroundColor: .clear)
-
-
-// Show a small red activity indicator with a clear background
-ActivityIndicator.shared.show(style: .small, color: .red, backgroundColor: .clear)
-
-
-Customization
-The show method takes three optional parameters for customizing the activity indicator:
-
-style: The style of the activity indicator. Defaults to .large.
-color: The color of the activity indicator. Defaults to .white.
-backgroundColor: The background color of the view that contains the activity indicator. Defaults to a semi-transparent black color.
-Installation
-Simply copy and paste the ActivityIndicator class into your project, or add it as a file.
-
-License
-ActivityIndicator is available under the MIT license. See the LICENSE file for more information.
-
-Credits
-ActivityIndicator was created by [Your Name] (add your name or your team's name). If you have any questions or suggestions, please feel free to contact us.
-
-Contributing
-If you would like to contribute to ActivityIndicator, please fork the repository and submit a pull request. We welcome contributions from anyone and everyone!
-
-
-
